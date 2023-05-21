@@ -1,22 +1,26 @@
 
-tijera = ARGV[0].to_s
-piedra = ARGV[0].to_s
-papel = ARGV[0].to_s 
-computador = rand (0...3)
-#1 piedra #2 papel #3 tijera 
-puts "computador juega #{computador} " 
+puts "ingresa piedra, papel o tijera"
+opcion = gets.chomp.to_s
+pc = rand(4)
 
-    if tijera = tijera  && computador = 1
-        puts "#{nombre} eres mayor de edad"
-    else 
-        puts "#{nombre} eres menor de edad"
-    end
-    
-
-    pc=rand(0..2) #en terminal rand (0...10)
-    puts "ingreanjnskfdj"
-    opcion = gets.chomp.to_i
-
-    if pc == 0
-        puts "piedra"
-    opcion = 
+if pc  == 1 && opcion == "piedra"
+    puts "pc juega #{opcion} "
+    puts "empataste"
+elsif pc  == 2 && opcion == "papel"
+    puts "pc juega #{opcion} "
+    puts "empataste"
+elsif pc  == 3 && opcion == "tijera"
+    puts "pc juega #{opcion} "
+    puts "empataste"
+elsif pc  == 1 && opcion == "tijera"
+    puts "pc juega #{pc}"
+    puts "perdiste"
+elsif pc  == 2 && opcion == "papel"
+    puts "pc juega #{pc}"
+    puts "perdiste" 
+elsif pc  == 3 && opcion == "piedra"
+    puts "pc juega #{pc}"
+    puts "perdiste" 
+else
+    puts "ganaste"
+end
